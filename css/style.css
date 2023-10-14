@@ -1,0 +1,2656 @@
+/* ------------------------------------------ */
+/*         General & Basic Styles
+/* ------------------------------------------ */
+
+body,html
+{
+	height:100%
+}
+
+body
+{
+	font-family: "Tajawal-Regular";
+}
+
+body.overflowH
+{
+	overflow:hidden
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	margin-top:0;
+	margin-bottom:0
+}
+
+ul
+{
+	margin-bottom:0;
+	padding-right:0;
+	list-style:none
+}
+
+p
+{
+	margin-bottom:0
+}
+
+a
+{
+	text-decoration:none!important;
+	outline:none;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+a:hover, a:active, a:focus {
+    outline: 0;
+}
+
+.center-block
+{
+	float:none
+}
+
+.background-cover
+{
+	-webkit-background-size:cover!important;
+	-moz-background-size:cover!important;
+	-o-background-size:cover!important;
+	background-size:cover!important;
+}
+
+input,
+textarea,
+button,
+select
+{
+	outline:none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+.Owl
+{
+    direction:ltr;
+}
+
+.ui-datepicker
+{
+	z-index:9999!important
+}
+
+.titleStyle
+{
+	font-size:25px;
+	color:000;
+	position:relative;
+	text-align:center;
+	margin-bottom:45px;
+	font-family: "Tajawal-Bold";
+	padding-bottom:15px
+}
+
+.titleStyle:before
+{
+	content:"";
+	width:30px;
+	height:2px;
+	background-color:#0ea2ef;
+	position:absolute;
+	right:calc(50% - 15px);
+	bottom:0;
+}
+
+/* ------------------------------------------ */
+/*         Header
+/* ------------------------------------------ */
+
+.header
+{
+	background-color:#fff;
+}
+
+.header .topBar 
+{
+	padding-bottom:15px;
+}
+
+.header .topBar .logo
+{
+	float:right;
+	width:300px;
+	max-width:100%;
+	margin-top:15px
+}
+
+.header .topBar .logo img
+{
+	max-width:100%
+}
+
+.header .topBar .leftSection
+{
+	float:left;
+}
+
+.header .topBar .leftSection .searchHeader
+{
+	margin-bottom:20px
+}
+
+.header .topBar .leftSection .searchHeader input
+{
+	width:210px;
+	height:40px;
+	float:right;
+	border:none;
+	background-color:#f4f4f4;
+	padding:0 15px;
+	color:#474747;
+	font-size:12px;
+	font-family: "Tajawal-Bold";
+}
+
+.header .topBar .leftSection .searchHeader input::placeholder
+{
+	color: #474747;
+}
+.header .topBar .leftSection .searchHeader input::-webkit-input-placeholder
+{
+	color: #474747;
+}
+.header .topBar .leftSection .searchHeader input::-moz-placeholder { /* Firefox 19+ */
+  color: #474747;
+}
+
+.header .topBar .leftSection .searchHeader input:-ms-input-placeholder { /* IE 10+ */
+  color: #474747;
+}
+
+.header .topBar .leftSection .searchHeader input:-moz-placeholder { /* Firefox 18- */
+  color: #474747;
+}
+
+.header .topBar .leftSection .searchHeader button
+{
+	float:right;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	border:none;
+	width:90px;
+	font-size:13px;
+	font-family: "Tajawal-Bold";
+	background-color:#0ea2ef
+}
+
+.header .topBar .leftSection .dirLtr
+{
+	direction: ltr
+}
+
+
+.header .topBar .leftSection .telHeader
+{
+	color:#0ea2ef;
+	font-size:15px;
+	text-align:left;
+	display:inline-block;
+	font-family: "Tajawal-Bold";
+}
+
+.header .topBar .leftSection .telHeader span
+{
+	color:#000000
+}
+
+.header .topBar .leftSection .telHeader i
+{
+	float:right;
+	font-size:20px;
+	margin-top:-3px;
+	margin-left:5px
+}
+
+.header .menuHeader
+{
+	background-color:#0ea2ef
+}
+
+.header .menuHeader .menu
+{
+	float:right;
+}
+
+.header .menuHeader .menu li
+{
+	float:right;
+	position:relative
+}
+
+.header .menuHeader .menu li a
+{
+	display:block;
+	height:50px;
+	line-height:50px;
+	padding:0 15px;
+	color:#fff;
+	font-size:17px;
+	cursor:pointer;
+	font-family: "Tajawal-Bold";
+}
+
+
+
+.header .menuHeader .menu li a:hover,
+.header .menuHeader .menu li.active a
+{
+	background-color:#0991d8
+}
+
+.header .menuHeader .menu li .subMenu
+{
+	position:absolute;
+	top:100%;
+	right:0;
+	width:200px;
+	background-color:#fff;
+	z-index: 99;
+	border-bottom:2px solid #0ea2ef;
+	padding:25px;
+	visibility:hidden;
+	opacity: 0;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.header .menuHeader .menu li a:hover ~ .subMenu,
+.header .menuHeader .menu li .subMenu:hover
+{
+	opacity:1;
+	visibility: visible
+}
+
+.header .menuHeader .menu li .subMenu .titleMenu
+{
+	position:relative;
+	color:#0ea2ef;
+	font-size:15px;
+	font-family: "Tajawal-Bold";
+	padding-bottom:10px;
+	margin-bottom:20px
+}
+
+.header .menuHeader .menu li .subMenu .titleMenu:before
+{
+	content:"";
+	width:20px;
+	height:2px;
+	background-color:#0ea2ef;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+.header .menuHeader .menu li .subMenu li
+{
+	float:none;
+}
+
+.header .menuHeader .menu li .subMenu a
+{
+	height:auto;
+	line-height:normal;
+	color:#474747;
+	font-size:12px;
+	font-family: "Tajawal-Bold";
+	margin-bottom:15px;
+	padding-right:15px;
+	padding-left:0;
+	position:relative
+}
+
+.header .menuHeader .menu li .subMenu a:hover
+{
+	background:none;
+	margin-right:5px;
+	color:#0ea2ef
+}
+
+.header .menuHeader .menu li .subMenu a:hover:before
+{
+	color:#0ea2ef
+}
+
+.header .menuHeader .menu li .subMenu a:before
+{
+	content:"\f106";
+	position:absolute;
+	right:0;
+	top:4px;
+	font-size:10px;
+	color:#474747;
+    font-family: "Flaticon";
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.header .menuHeader .menu li .subMenu2
+{
+	width:415px;
+}
+
+.header .menuHeader .menu li .subMenu2 .row
+{
+	margin-left:-5px;
+	margin-right:-5px
+}
+
+.header .menuHeader .menu li .subMenu2 .row .col-md-7,
+.header .menuHeader .menu li .subMenu2 .row .col-md-5
+{
+	padding-left:5px;
+	padding-right:5px
+}
+
+.header .menuHeader .menu li .subMenu3
+{
+	width:450px
+}
+
+.header .menuHeader .menu li .subMenu3 .row .col-md-6
+{
+	padding:0 5px
+}
+
+.Reservation
+{
+	position:absolute;
+	top:100%;
+	left:-20px;
+	width:670px;
+	background-color:#fff;
+	z-index: 99;
+	padding:50px;
+	display:none
+}
+
+.Reservation .titleResev
+{
+	color:#0ea2ef;
+	font-size:20px;
+	text-align: center;
+	font-family: "Tajawal-Bold";
+	margin-bottom:25px;
+}
+
+.Reservation .row
+{
+	margin-left:-5px;
+	margin-right:-5px;
+}
+
+.Reservation .row .col-md-6
+{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.Reservation .inputStyle
+{
+	position:relative;
+	margin-bottom:10px;
+	padding-right:50px;
+	z-index:1;
+	border:1px solid #dbdbdb;
+	background-color:#f4f4f4
+}
+
+.Reservation .inputStyle .icon
+{
+	position:absolute;
+	right:0;
+	top:0;
+	width:50px;
+	height:100%;
+	text-align:center;
+	font-size:15px;
+	border-left:1px solid #dbdbdb;
+	line-height:50px;
+	color:#474747;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.Reservation .inputStyle input,
+.Reservation .inputStyle select
+{
+	width:100%;
+	height:55px;
+	border:none;
+	padding-right:15px;
+	font-size:12px;
+	font-family: "Tajawal-Bold";
+	background:none;
+}
+
+.Reservation .inputStyle input:focus ~ .icon ,
+.Reservation .inputStyle select:focus ~ .icon
+{
+	background-color:#0ea2ef;
+	color:#fff;
+}
+
+.Reservation .inputStyle select
+{
+	cursor:pointer;
+	-webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+}
+
+.Reservation .inputStyle input::placeholder
+{
+	color: #474747;
+}
+.Reservation .inputStyle input::-webkit-input-placeholder
+{
+	color: #474747;
+}
+.Reservation .inputStyle input::-moz-placeholder { /* Firefox 19+ */
+  color: #474747;
+}
+
+.Reservation .inputStyle input:-ms-input-placeholder { /* IE 10+ */
+  color: #474747;
+}
+
+.Reservation .inputStyle input:-moz-placeholder { /* Firefox 18- */
+  color: #474747;
+}
+
+.Reservation .inputStyle span
+{
+	position:absolute;
+	right:65px;
+	top:19px;
+	color:#474747;
+	font-family: "Tajawal-Bold";
+	font-size:12px;
+	z-index:-1
+}
+
+.Reservation .inputStyle .datepicker
+{
+	width:100%;
+	text-align:left;
+	padding-left:50px;
+}
+
+.Reservation button
+{
+	width:100%;
+	height:55px;
+	background-color:#0ea2ef;
+	color:#fff;
+	font-family: "Tajawal-Bold";
+	border:none;
+	margin-top:5px;
+	font-size:18px;
+}
+
+.Reservation .downIcon
+{
+	position:absolute;
+	left:15px;
+	top:22px;
+	z-index:-1
+}
+
+
+.header .openMenu
+{
+	font-size:15px;
+	color:#fff;
+	border:2px solid #fff;
+	width:30px;
+	height:30px;
+	text-align:center;
+	line-height:28px;
+	float:right;
+	display:none;
+	cursor:pointer;
+	margin-top:10px;
+	margin-left:15px;
+}
+
+
+
+.menuMob
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:199;
+	left:0;
+	top:0;
+	display:none
+}
+
+.menuMob .BgClose
+{
+	background-color:rgba(0,0,0,0.4);
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:99;
+	cursor:pointer
+}
+
+.menuMob .menuContent
+{
+	width:320px;
+	max-width:100%;
+	background-color:#151718;
+	position:absolute;
+	right:0;
+	top:0;
+	height:100%;
+    overflow: auto;
+    direction:rtl ;
+    padding-bottom:40px;
+	z-index:100;
+}
+
+.menuMob .menuContent .closeBtn
+{
+	position:absolute;
+	left:15px;
+	top:5px;
+	color:#000;
+	cursor:pointer;
+	z-index:1;
+	font-size:15px;
+}
+
+.menuMob .menuContent .logo
+{
+	max-width:100%;
+	background-color:#fff;
+	padding:15px;
+	display:inline-block;
+}
+
+.menuMob .menuContent .logo img
+{
+	width:100%
+}
+
+.menuMob .menuContent .menuRes
+{
+	margin-top:20px;
+	padding:0 20px;
+	margin-bottom:40px
+}
+
+.menuMob .menuContent .menuRes li a
+{
+	color:#949494;
+	border-bottom:1px solid #202122;
+	height:50px;
+	display:block;
+	font-size:14px;
+	line-height:50px;
+	font-family: "Tajawal-Bold";
+}
+
+.menuMob .menuContent .menuRes li a i
+{
+	float:left;
+	font-size:16px;
+	margin-left:10px;
+    margin-top: 17px;
+}
+
+
+.menuMob .menuContent .menuRes li .subLinks
+{
+	padding-right:20px;
+	display:none;
+}
+
+.menuMob .menuContent .menuRes li .subLinks a
+{
+	border-bottom:1px solid #202122
+}
+
+
+.menuMob .telHeader
+{
+	color:#ffffff;
+	font-size:15px;
+	font-family: "Tajawal-Bold";
+	margin-right:20px;
+}
+
+.menuMob .telHeader i
+{
+	color:#0f92d6;
+	margin-left:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.header .menuHeader .shareHeader
+{
+	float:left;
+	position:relative
+}
+
+.header .menuHeader .shareHeader .openShare
+{
+	color:#fff;
+	height:50px;
+	line-height:50px;
+	display:block;
+	font-size:17px;
+	cursor:pointer
+}
+
+.listSocial
+{
+	position: absolute;
+	width:205px;
+	left:0;
+	top:100%;
+	padding:20px;
+	direction:ltr;
+	display:none;
+	background-color:#fff;
+	box-shadow: 0px 0px 4px 0px rgba(53, 53, 53, 0.24);
+	z-index:99;
+}
+
+.listSocial a
+{
+	display:block;
+	width:100%;
+	height:35px;
+	line-height:35px;
+	color:#fff;
+	margin:0;
+	font-size:14px;
+	padding-right:10px;
+	border-radius:3px;
+	text-align:left;
+	margin-bottom:5px;
+	
+}
+
+.listSocial a span
+{
+	font-family: "DinNextRegular";
+	float:right;
+	color:#fff;
+	margin-top:0;
+	font-size:14px
+}
+
+.listSocial a i
+{
+	float:left;
+	height:100%;
+	width:40px;
+	text-align:center;
+	color:#fff;
+	background-color:rgba(255,255,255,0.1);
+	line-height:36px;
+	margin-right:10px
+}
+
+.listSocial a.facebook
+{
+	background-color:#304d8d
+}
+
+.listSocial a.twitter
+{
+	background-color:#0099da
+}
+
+.listSocial a.linkedin
+{
+	background-color:#006ea5
+}
+
+.listSocial a.google-plus
+{
+	background-color:#cc4326
+}
+
+/* ------------------------------------------ */
+/*         Slider
+/* ------------------------------------------ */
+
+.bx-wrapper
+{
+	border:none;
+	margin:0;
+}
+
+.bx-wrapper .bx-viewport
+{
+    border:none;
+    background:none;
+    border:0;
+    box-shadow:none;
+    left:0;
+}
+
+
+.slider
+{
+	position:relative;
+	overflow:hidden
+}
+
+.slider .background-slider
+{
+    background-color: rgba(10,10,10,0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.slider img
+{
+	height:570px;
+	width:100%
+}
+
+.slider .slider-details
+{
+	position:absolute;
+	right:0;
+	top:0;
+	height:100%;
+	width:100%;
+	padding-right:0;
+	padding-top:170px;
+	direction:rtl;
+	text-align:right;
+	z-index:1;
+	color:#fff;
+	text-align:center
+}
+
+.slider .slider-details .desc
+{
+	width:800px;
+	max-width:100%;
+	color:#fff;
+	font-size:40px;
+	text-align:center;
+	margin:0 auto;
+	font-family: "Tajawal-Bold";
+}
+
+
+
+.bx-wrapper .bx-pager.bx-default-pager
+{
+	position:absolute;
+	top:calc(50% - 35px);
+	right:60px;
+	width:auto;
+	padding-top:0;
+	height:auto;
+	direction:rtl
+}
+
+.bx-wrapper .bx-pager .bx-pager-item
+{
+	display:block;
+	margin-bottom:15px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a
+{
+	background-color:#fff;
+	width:15px;
+	height:4px;
+	border-radius:0
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active
+{
+	background-color:#0ea2ef;
+	width:25px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover
+{
+	background-color:#0ea2ef;
+	width:25px;
+}
+
+
+.the-slider-control li	span i
+{
+    position: absolute;
+    right: 0;
+    top: calc(50% - 45px);
+    z-index: 3;
+    text-align: center;
+    display: block;
+    width: 45px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 25px;
+    background-color: #000;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.the-slider-control li	span#slider-prev i
+{
+	right:auto;
+	left:0
+}
+
+/* ------------------------------------------ */
+/*         About
+/* ------------------------------------------ */
+
+.about
+{
+	background-color:#f8f8f8;
+	padding-bottom:20px;
+	
+}
+
+.about .container
+{
+	margin-top:-105px;
+	
+}
+
+.itemAbout
+{
+	background-color:#fff;
+	border:1px solid #e2e2e2;
+	padding:20px;
+	border-radius:3px;
+	margin-bottom:15px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.itemAbout:hover
+{
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.28);
+}
+.itemAbout .titleItem
+{
+	color:#000000;
+	font-size:20px;
+	line-height:80px;
+	margin-bottom:25px;
+	font-family: "Tajawal-Bold";
+}
+
+.itemAbout .titleItem i
+{
+	float:right;
+	margin-left:20px;
+	width:80px;
+	height:80px;
+	color:#fff;
+	border-radius:3px;
+	font-size:45px;
+	background-color:#0ea2ef;
+	text-align:center;
+	line-height:80px;
+}
+
+.itemAbout .desc
+{
+	font-size:13px;
+	color:#000000;
+	font-family: "Tajawal-Bold";
+	width:260px;
+	max-width:100%;
+	line-height:23px;
+	margin-bottom:20px
+}
+
+.itemAbout .readMore
+{
+	float:left;
+	border-radius:3px;
+	background-color:#0ea2ef;
+	color:#fff;
+	height:30px;
+	text-align:center;
+	font-size:13px;
+	padding:0 25px;
+	font-family: "Tajawal-Bold";
+	border:2px solid #0ea2ef;
+	line-height:25px;
+}
+
+.itemAbout .readMore:hover
+{
+	color:#000;
+	background:none;
+}
+
+/* ------------------------------------------ */
+/*         Sections Hospital
+/* ------------------------------------------ */
+
+.sectionHospital
+{
+	overflow:hidden;
+	padding:60px 0 40px;
+	border-top:1px solid #e2e2e2
+}
+
+
+.sectionHospital .item
+{
+	position:relative;
+	overflow:hidden;
+	max-width:300px;
+	margin:0 auto 20px
+}
+
+.sectionHospital .item img
+{
+	width:100%;
+	height:335px;
+}
+
+.sectionHospital .item:hover .mask
+{
+	height:100%;
+}
+
+.sectionHospital .item:hover .mask .icon
+{
+	display:block;
+}
+.sectionHospital .item:hover .mask .desc
+{
+	display:block;
+}
+
+.sectionHospital .item:hover .mask .details
+{
+	display:inline-block;
+}
+
+
+.sectionHospital .item .mask
+{
+	position:absolute;
+	width:100%;
+	height:65px;
+	padding:25px 30px;
+	text-align:center;
+	z-index:1;
+	right:0;
+	bottom:0;
+	background-color:rgba(0,0,0,0.7);
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.sectionHospital .item .mask .icon
+{
+	width:90px;
+	height:90px;
+	display:block;
+	font-size:40px;
+	border-radius:50%;
+	background-color:#fff;
+	color:#000;
+	margin:0 auto 15px;
+	line-height:90px;
+	display:none;
+}
+
+.sectionHospital .item .mask .title
+{
+	color:#ffffff;
+	font-size:18px;
+	font-family: "Tajawal-Bold";
+}
+
+.sectionHospital .item .mask .desc
+{
+	color:#ffffff;
+	font-size:12px;
+	display:none;
+	font-family: "Tajawal-Bold";
+	line-height:18px;
+	margin:15px 0 25px;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.sectionHospital .item .mask .details
+{
+	display:none;
+	padding:0 25px;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	display:none;
+	background-color:#0ea2ef;
+	border-radius:3px;
+	font-family: "Tajawal-Bold";
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+/* ------------------------------------------ */
+/*         Clinics
+/* ------------------------------------------ */
+
+.Clinics
+{
+	padding:45px 30px;
+	background-color:#212328
+}
+
+.Clinics .titleStyle
+{
+	color:#fff
+}
+
+.Clinics .item
+{
+	padding:0 15px;
+	direction:rtl
+}
+
+.Clinics .item .clinic
+{
+	padding:30px 15px;
+	background-color:#37383d;
+	border-radius:3px;
+	text-align:center
+}
+
+.Clinics .item .clinic:hover
+{
+	background-color:#0ea2ef
+}
+
+.Clinics .item .clinic:hover .icon,
+.Clinics .item .clinic:hover .desc,
+.Clinics .item .clinic:hover .readMore
+{
+	color:#fff;
+}
+
+.Clinics .item .clinic:hover .readMore
+{
+	background-color:#0d94db
+}
+
+.Clinics .item .clinic .icon
+{
+	font-size:50px;
+	display:inline-block;
+	color:#6a6a6a;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.Clinics .item .clinic .title
+{
+	color:#ffffff;
+	font-size:20px;
+	margin-bottom:15px;
+	font-family: "Tajawal-Bold";
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.Clinics .item .clinic .desc
+{
+	color:#989898;
+	font-size:12px;
+	margin-bottom:15px;
+	font-family: "Tajawal-Bold";
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.Clinics .item .clinic .readMore
+{
+	height:30px;
+	line-height:30px;
+	background-color:#212328;
+	border-radius:3px;
+	color:#fff;
+	font-family: "Tajawal-Bold";
+	padding:0 25px;
+	display:inline-block;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.Clinics .owl-theme .owl-controls .owl-buttons div
+{
+	position:absolute;
+	right:-20px;
+	top:calc(50% - 15px);
+    border-radius:0;
+    opacity:1;
+    background:none;
+    line-height: 35px;
+    width:30px;
+    color:#fff;
+    margin:0;
+    text-align:center;
+    border-radius:0;
+    margin-left:5px;
+    z-index:6;
+    font-size:25px;	
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.Clinics .owl-theme .owl-controls .owl-buttons div.owl-prev
+{
+	right:auto;
+	left:-20px
+}
+
+/* ------------------------------------------ */
+/*         Blog
+/* ------------------------------------------ */
+
+.blog
+{
+	padding:60px 0 35px;
+	background-color:#ececec;
+	border-bottom:2px solid #e2e2e2
+}
+
+.blog .item
+{
+	padding:5px 15px;
+	direction:rtl
+}
+
+.blog .item .itemPost
+{
+	background-color:#fff;
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.39);
+}
+
+.blog .item .mask
+{
+	position:relative;
+	display:block
+}
+
+.blog .item .mask img
+{
+	width:100%;
+	height:210px
+}
+
+.blog .item .mask .date
+{
+	background-color:#0ea2ef;
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding-left:15px;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	font-family: "Tajawal-Bold";
+}
+
+.blog .item .mask .date i
+{
+	float:right;
+	width:35px;
+	height:100%;
+	color:#fff;
+	text-align:center;
+	background-color:#1791d0;
+	margin-left:15px;	
+}
+
+.blog .item .postDetails
+{
+	padding:25px
+}
+
+.blog .item .postDetails .title
+{
+	color:#010101;
+	font-size:15px;
+	font-family: "Tajawal-Bold";
+	max-width:210px;
+	display:inline-block
+}
+
+
+.blog .owl-theme .owl-controls
+{
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: 99
+}
+
+.blog .OwlBlog .owl-buttons
+{
+	text-align:right
+}
+
+.blog .OwlBlog .owl-buttons div
+{
+    border-radius:0;
+    opacity:1;
+    height: 45px;
+    line-height: 45px;
+    width:45px;
+    color:#000;
+    margin:0;
+    text-align:center;
+    border-radius:50%;
+    margin-left:5px;
+    font-size:25px;
+    z-index:6;
+    padding:0;
+    position:relative;
+    background:none;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.blog .OwlBlog .owl-buttons div:hover
+{
+	background-color:#c7c7c7
+}
+
+/* ------------------------------------------ */
+/*         Clients
+/* ------------------------------------------ */
+
+.clients
+{
+	padding:60px 0 45px
+}
+
+
+.clients .item
+{
+	padding:0 15px;
+	direction:rtl
+}
+
+.clients .item .LogoBrand
+{
+	border:1px solid #e7e7e7;
+	padding:15px;
+	height:120px;
+	line-height:70px;
+	text-align:center
+}
+
+.clients .item .LogoBrand img
+{
+	max-width:100%;
+	max-height:100%
+}
+
+/* ------------------------------------------ */
+/*         Mailing List
+/* ------------------------------------------ */
+
+.MailingList
+{
+	padding:45px 0;
+	background-color:#272727;
+	margin-bottom:30px;
+	overflow:hidden
+}
+
+.MailingList .rightSection
+{
+	float:right;
+}
+
+.MailingList .rightSection .title
+{
+	color:#fff;
+	margin-bottom:15px;
+	font-size:20px;
+	font-family: "Tajawal-Bold";
+}
+
+.MailingList .rightSection .desc
+{
+	color:#a0a0a0;
+	font-size:12px;
+	margin-bottom:15px;
+	font-family: "Tajawal-Bold";
+}
+
+.MailingList .leftSection
+{
+	float:left;
+}
+
+.MailingList .leftSection .inputStyle
+{
+	position:relative;
+	float:right;
+	border-radius:3px;
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.28);
+	overflow:hidden
+}
+
+.MailingList .leftSection .inputStyle input
+{
+	width:425px;
+	max-width:100%;
+	height:55px;
+	padding-right:85px;
+	border:none;
+	padding-left:15px;
+	color:#bababa;
+	font-size:12px;
+	font-family: "Tajawal-Bold";
+	background-color:#525252;
+}
+
+.MailingList .leftSection .inputStyle i
+{
+	position:absolute;
+	right:0;
+	top:0;
+	width:70px;
+	height:100%;
+	background-color:#37383d;
+	color:#797979;
+	text-align:center;
+	line-height:55px;
+	font-size:30px
+}
+
+.MailingList .leftSection .inputStyle input::placeholder
+{
+	color: #bababa;
+}
+.MailingList .leftSection .inputStyle input::-webkit-input-placeholder
+{
+	color: #bababa;
+}
+.MailingList .leftSection .inputStyle input::-moz-placeholder { /* Firefox 19+ */
+  color: #bababa;
+}
+
+.MailingList .leftSection .inputStyle input:-ms-input-placeholder { /* IE 10+ */
+  color: #bababa;
+}
+
+.MailingList .leftSection .inputStyle input:-moz-placeholder { /* Firefox 18- */
+  color: #bababa;
+}
+
+.MailingList .leftSection button
+{
+	float:left;
+	height:55px;
+	border:none;
+	background-color:#2db5fb;
+	color:#fff;
+	font-family: "Tajawal-Bold";
+	font-size:15px;
+	margin-right:10px;
+	border-radius:3px;
+	padding:0 25px;
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.28);
+}
+
+/* ------------------------------------------ */
+/*         Footer
+/* ------------------------------------------ */
+
+.footer
+{
+	background-color:#2e2e2e;
+	position:relative;
+	overflow:hidden
+}
+
+.footer .titleFooter
+{
+	color:#ffffff;
+	font-size:20px;
+	font-family: "Tajawal-Bold";
+	padding-right:15px;
+	margin-bottom:20px;
+	position:relative
+}
+
+.footer .titleFooter:before
+{
+	content:"";
+	position:absolute;
+	right:0;
+	top:10px;
+	width:5px;
+	height:5px;
+	background-color:#878787;
+	border-radius:50%;
+}
+
+.footer .col-md-3,
+.footer .col-md-2
+{
+	border-left:1px solid #37383d;
+	min-height:230px;
+}
+
+.footer .padding-right
+{
+	padding-right: 40px
+}
+
+.footer .col-md-4
+{
+	padding-right:50px
+}
+
+.footer .listFooter 
+{
+	float:right;
+	margin-bottom:15px;
+}
+
+.footer .listFooter:not(:first-of-type)
+{
+	margin-right:45px
+}
+
+.footer .listFooter li a
+{
+	color:#a1a1a1;
+	font-size:12px;
+	margin-bottom:10px;
+	position:relative;
+	font-family: "Tajawal-Bold";
+	display:block;
+	padding-right:15px;
+}
+
+.footer .listFooter li a:before
+{
+	content:"\f106";
+	position:absolute;
+	right:0;
+	top:3px;
+	font-size:10px;
+	color:#a1a1a1;
+    font-family: "Flaticon";
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.footer .infoFooter li
+{
+	position:relative;
+	padding-right:30px;
+	font-size:12px;
+	margin-bottom:15px;
+	font-family: "Tajawal-Bold";
+}
+
+.footer .infoFooter li i
+{
+	position:absolute;
+	right:0;
+	top:0;
+	color:#525252;
+	font-size:15px;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.footer .infoFooter li span
+{
+	display:block;
+	color:#a0a0a0;
+	margin-bottom:5px;
+}
+
+.footer .infoFooter li a
+{
+	color:#a0a0a0;
+}
+
+.footer .infoFooter li:hover i
+{
+	color:#0ea2ef
+}
+
+.footer .footerDown
+{
+	padding:20px 0 50px;
+	overflow:hidden;
+	border-top:1px solid #37383d
+}
+
+.footer .footerDown .copyRights
+{
+	float:right;
+	color:#a0a0a0;
+	font-size:12px;
+	margin-left:25px;
+	font-family: "Tajawal-Bold";
+	margin-top:13px;
+}
+
+.footer .footerDown .socialFooter
+{
+	float:right;
+	margin-top:3px;
+	
+}
+
+.footer .footerDown .socialFooter li
+{
+	float:left;
+	margin-right:5px;
+}
+
+.footer .footerDown .socialFooter li a
+{
+	width:35px;
+	height:35px;
+	line-height:35px;
+	background-color:#525252;
+	color:#989898;
+	border-radius:3px;
+	text-align:center;
+}
+
+.footer .footerDown .logoServers
+{
+	float:left
+}
+
+.footer .footerDown .logoServers img
+{
+	max-width:100%;
+}
+
+.footer .map
+{
+	position: absolute;
+	bottom:-370px;
+	right:0;
+	width:100%;
+	z-index:9;
+	margin-top:20px;
+	border-top:9px solid #0ea2ef;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.footer .map.active
+{
+	bottom:0
+}
+
+.footer .map .mapTitle
+{
+    position: absolute;
+    top: -48px;
+    right: calc(50% - 80px);
+    width: 160px;
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #0ea2ef;
+    color: #fff;
+    font-size: 12px;
+    font-family: "Tajawal-Bold";
+    line-height: 40px;
+}
+
+.footer .google-map
+{
+	width:100%;
+	height:370px;
+	border:none;
+	margin-bottom:-6px
+}
+
+
+/* ------------------------------------------ */
+/*         Breadcrumb
+/* ------------------------------------------ */
+
+.Breadcrumb
+{
+    padding:155px 0 75px;
+    position:relative;
+    text-align:center;
+    overflow:hidden;
+    z-index:1
+}
+
+.Breadcrumb .background-slider
+{
+    background-color: rgba(10,10,10,0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1
+}
+
+.Breadcrumb img
+{
+    position:absolute;
+    top:0;
+    left:0;
+	width:100%;
+	height:100%;
+    z-index:-2
+}
+
+.Breadcrumb h2
+{
+    font-size:30px;
+    color:#ffffff;
+    margin-bottom:40px;
+    font-family: "Tajawal-Bold";
+}
+
+.Breadcrumb ul li 
+{
+    display:inline-block;
+    color:#fff;
+    font-size:14px;
+    font-family: "Tajawal-Bold";
+}
+
+.Breadcrumb ul li:not(:first-of-type):before
+{
+    content:"/";
+    font-style: normal;
+    padding:0 15px
+}
+
+.Breadcrumb ul li a
+{
+    color:#fff;
+    
+}
+
+/* ------------------------------------------ */
+/*         Job Page
+/* ------------------------------------------ */
+
+.jobPage
+{
+	padding:45px 0;
+	background-color:#f8f8f8
+}
+
+.accordion1 .accordion
+{
+	margin-bottom:10px;
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.28);
+	background-color:#fff;
+}
+
+.accordion1 .accordion.last
+{
+	margin-bottom:none
+}
+
+.accordion1 .accordion .accordion-title
+{
+	background-color:#fff;
+	font-size:16px;
+	height:80px;
+	line-height:80px;
+	padding:0 30px;
+	color:#000000;
+	cursor:pointer;
+	margin:0;
+	font-family: "Tajawal-Bold";
+	position:relative;
+}
+
+.accordion1 .accordion .accordion-title i
+{
+    position: absolute;
+    left: 30px;
+    top: 0;
+    height:100%;
+    line-height: 80px;
+}
+
+.accordion1 .accordion .accordion-title.title2
+{
+	line-height:normal;
+	padding-top:15px
+}
+
+.accordion1 .accordion .accordion-title.title2 span
+{
+	display:block
+}
+
+.accordion1 .accordion.active .accordion-title i:before
+{
+	content:"\f122"
+}
+
+
+
+.accordion1 .accordion .accordion-content
+{
+	padding:35px 30px;
+	border-top:1px solid #f9f9f9;
+	display:none;
+}
+
+.accordion1 .accordion .accordion-content .subTitle
+{
+	font-family: "Tajawal-Bold";
+	color:#000;
+	margin-bottom:25px;
+	margin-right:10px;
+	font-size:16px;
+}
+
+.accordion1 .accordion .accordion-content .desc
+{
+	font-size:16px;
+	line-height:19px;
+	color:#000000
+}
+
+.accordion1 .accordion .accordion-content .desc li
+{
+	margin-bottom:10px
+}
+
+.accordion1 .accordion .accordion-content .sendNow
+{
+	float:left;
+	height:35px;
+	background-color:#0ea2ef;
+	color:#fff;
+	font-family: "Tajawal-Bold";
+	border-radius:3px;
+	padding:0 40px;
+	line-height:35px;
+	margin-top:30px;
+	
+}
+/* ------------------------------------------ */
+/*         About Page
+/* ------------------------------------------ */
+
+.aboutPage
+{
+	padding:55px 0 105px;
+	background-color:#f8f8f8
+}
+
+.aboutPage .itemPage
+{
+	background-color:#fff;
+	margin-bottom:25px;
+	border:1px solid #e2e2e2;
+	padding:50px 0 35px;
+	text-align:center
+}
+
+.aboutPage .itemPage .title
+{
+	color:#0ea2ef;
+	font-size:25px;
+	margin-bottom:20px;
+	font-family: "Tajawal-Bold";
+}
+
+.aboutPage .itemPage .desc
+{
+	color:#474747;
+	font-size:14px;
+	line-height:20px;
+	font-family: "Tajawal-Bold";
+	width: auto;
+	max-width:100%;
+	padding:0 20px;
+	margin:0 auto
+}
+
+/* ------------------------------------------ */
+/*         Managment
+/* ------------------------------------------ */
+
+.managment
+{
+	padding:70px 0 100px;
+	background-color:#f8f8f8;
+}
+
+.managment img
+{
+	display:block;
+	margin:0 auto 30px;
+	max-width:100%;
+	border:2px solid #0ea2ef
+}
+
+.managment .title
+{
+	color:#474747;
+	font-size:20px;
+	font-family: "Tajawal-Bold";
+	margin-top:10px;
+	margin-bottom:15px;
+}
+
+.managment .subTitle
+{
+	color:#0ea2ef;
+	font-size:25px;
+	font-family: "Tajawal-Bold";
+	margin-bottom:25px;
+	display:block;
+}
+
+.managment .desc
+{
+	font-size:14px;
+	line-height:23px;
+	color:#474747;
+	width:830px;
+	max-width:100%;
+	font-family: "Tajawal-Bold";
+}
+
+/* ------------------------------------------ */
+/*         Facilities
+/* ------------------------------------------ */
+
+.Facilities
+{
+	padding:50px 0;
+	background-color:#f8f8f8;
+	text-align:center
+}
+
+.Facilities .row
+{
+	margin:0
+}
+
+.Facilities .row .col-md-6
+{
+	padding:0
+}
+
+.Facilities img
+{
+	width:100%;
+	height:380px;
+	display:block;
+	margin:0 auto
+}
+
+.Facilities .google-map
+{
+	width:100%;
+	height:380px;
+	border:none;
+}
+
+.Facilities .title
+{
+	color:#010101;
+	font-size:20px;
+	font-family: "Tajawal-Bold";
+	margin-bottom:15px;
+	margin-top:30px;
+}
+
+.Facilities .desc
+{
+	width: 800px;
+	max-width:100%;
+	margin: auto;
+	line-height: 25px;
+	color:#474747;
+	font-size:14px;
+	font-family: "Tajawal-Bold";
+}
+
+/* ------------------------------------------ */
+/*         Contact Us
+/* ------------------------------------------ */
+
+.contactUs
+{
+	padding:60px 0 40px;
+	background-color:#f8f8f8
+}
+
+.contactUs .contactInfo
+{
+	padding:25px;
+	background-color:#fff;
+	min-height:460px;
+	border:1px solid #e2e2e2
+}
+
+.contactUs .titleContact
+{
+	color:#000000;
+	font-size:17px;
+	font-family: "Tajawal-Bold";
+	margin-bottom:15px;
+	line-height:60px
+}
+
+.contactUs .titleContact img
+{
+	float:right;
+	margin-left:20px;
+	
+}
+
+.contactUs .infoList
+{
+	padding-right:35px;
+	
+}
+
+.contactUs .infoList li
+{
+	position:relative;
+	border-top:1px solid #e3e3e3;
+	padding:15px 5px;
+	color:#000000;
+	font-size:16px;
+}
+
+.contactUs .infoList li a
+{
+	color:#000
+}
+
+.contactUs .infoList li span
+{
+	display:block;
+	font-family: "Tajawal-Bold";
+	font-size:14px;
+	margin-bottom:10px
+}
+
+.contactUs .infoList li i
+{
+	position:absolute;
+	right:-35px;
+	top:12px;
+	font-size:25px;
+	color:#2bbae0
+}
+
+.contactUs .contact
+{
+	padding:25px;
+	background-color:#fff;
+	min-height:460px;
+	border:1px solid #e2e2e2
+}
+
+.contactUs .contact input,
+.contactUs .contact textarea
+{
+	width:100%;
+	height:50px;
+	border:1px solid #ebebeb;
+	margin-bottom:15px;
+	padding:0 20px;
+	font-size:16px;
+}
+
+.contactUs .contact input:focus,
+.contactUs .contact textarea:focus
+{
+	background-color:#f3f3f3
+}
+
+.contactUs .contact textarea
+{
+	height:115px;
+	padding:20px;
+	resize:none;
+}
+
+.contactUs .contact input::placeholder,
+.contactUs .contact textarea::placeholder
+{
+	color: #000000;
+}
+.contactUs .contact input::-webkit-input-placeholder,
+.contactUs .contact textarea::-webkit-input-placeholder
+{
+	color: #000000;
+}
+.contactUs .contact input::-moz-placeholder,
+.contactUs .contact textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #000000;
+}
+
+.contactUs .contact input:-ms-input-placeholder,
+.contactUs .contact textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #000000;
+}
+
+.contactUs .contact input:-moz-placeholder,
+.contactUs .contact textarea:-moz-placeholder { /* Firefox 18- */
+  color: #000000;
+}
+
+.contactUs .contact button
+{
+	width:100%;
+	height:55px;
+	color:#ffffff;
+	font-size:16px;
+	font-family: "Tajawal-Bold";
+	border:none;
+	background-color:#2bbae0
+}
+
+/* ------------------------------------------ */
+/*         Clinics Page
+/* ------------------------------------------ */
+
+.clinicsPage
+{
+	padding:60px 0 80px;
+	background-color:#f8f8f8
+}
+
+.clinicsPage .sideBar
+{
+	background-color:#fff;
+	border-radius:10px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+
+.clinicsPage .sideBar .title
+{
+	background-color:#0ea2ef;
+	text-align:center;
+	height:85px;
+	color:#fff;
+	font-family: "Tajawal-Bold";
+	line-height:85px;
+	
+}
+
+.clinicsPage .sideBar .clinicsList
+{
+	padding:20px 0
+}
+
+.clinicsPage .sideBar .clinicsList li a
+{
+	display:block;
+	padding:0 25px;
+	height:50px;
+	color:#474747;
+	font-size:14px;
+	font-family: "Tajawal-Bold";
+	line-height:50px;
+	
+}
+
+.clinicsPage .sideBar .clinicsList li a i
+{
+	float:right;
+	width:30px;
+	margin-left:20px;
+	text-align:center;
+	color:#868686;
+	height:100%;
+	line-height:50px;
+	font-size:27px;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.clinicsPage .sideBar .clinicsList li a:hover
+{
+	background-color:#0ea2ef;
+	color:#fff;
+}
+
+.clinicsPage .sideBar .clinicsList li a:hover i
+{
+	color:#fff;
+	margin-left:25px;
+}
+
+.clinicsPage .sideClick
+{
+	overflow:hidden;
+	border-radius:10px;
+	text-align:center;
+	z-index:1;
+	position:relative;
+	padding:40px 0
+}
+
+.clinicsPage .sideClick img
+{
+	position:absolute;
+	right:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:-2
+}
+
+.clinicsPage .sideClick .bg
+{
+    background-color: rgba(10,10,10,0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1
+}
+
+.clinicsPage .sideClick .title
+{
+	color:#ffffff;
+	font-size:20px;
+	font-family: "Tajawal-Bold";
+	line-height:30px;
+	width:185px;
+	max-width:100%;
+	margin:0 auto 25px
+}
+
+.clinicsPage .sideClick a
+{
+	width:250px;
+	height:40px;
+	border-radius:5px;
+	background-color:#0ea2ef;
+	color:#fff;
+	font-size:16px;
+	line-height:40px;
+	margin:0 auto;
+	font-family: "Tajawal-Bold";
+	display:block;
+}
+
+.clinicsPage .descContent
+{
+	padding:40px 30px;
+	border-radius:10px;
+	background-color:#fff;
+	margin-bottom:20px
+}
+
+.clinicsPage .descContent .title
+{
+	color:#0ea2ef;
+	font-size:25px;
+	margin-bottom:20px;
+	font-family: "Tajawal-Bold";
+}
+
+.clinicsPage .descContent .desc
+{
+	color:#474747;
+	font-size:14px;
+	line-height:20px;
+	font-family: "Tajawal-Bold";
+}
+
+.clinicsPage .descContent .list li
+{
+	background-color:#f1f1f1;
+	font-family: "Tajawal-Bold";
+	padding:10px;
+}
+
+.clinicsPage .descContent .list li:nth-of-type(even)
+{
+	background-color:#ffffff
+}
+
+/* ------------------------------------------ */
+/*         Image Page
+/* ------------------------------------------ */
+
+.imagesPage
+{
+	padding:85px 0 50px; 
+}
+
+.imagesPage .itemImage
+{
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.28);
+	background-color:#fff;
+	margin-bottom:20px
+}
+
+.imagesPage .itemImage .mask
+{
+	position:relative;
+	height:220px;
+	overflow:hidden;
+	display:block
+}
+
+.imagesPage .itemImage .mask img
+{
+	width:100%;
+	height:100%
+}
+
+.imagesPage .itemImage:hover .mask  .maskContent
+{
+	opacity:1
+}
+
+.imagesPage .itemImage .mask .maskContent
+{
+	position:absolute;
+	right:0;
+	top:0;
+	width:100%;
+	opacity:0;
+	height:100%;
+	line-height:225px;
+	color:#fff;
+	font-size:35px;
+	text-align:center;
+	background-color:rgba(0,0,0,0.5);
+}
+
+.imagesPage .itemImage .details
+{
+	padding:25px
+}
+
+.imagesPage .itemImage .details .title
+{
+	color:#000000;
+	font-size:14px;
+	font-family: "Tajawal-Bold";
+	display:inline-block;
+	margin-bottom:15px
+}
+
+.imagesPage .itemImage .details span
+{
+	display:block;
+	color:#818195;
+	font-size:12px;
+	font-family: "Tajawal-Bold";
+	margin-bottom:10px;
+}
+
+.imagesPage .itemImage .details span i
+{
+	float:right;
+	margin-left:10px;
+	width:20px;
+	font-size:15px;
+	margin-top:-2px;
+	text-align:center;
+}
+
+/* ------------------------------------------ */
+/*         newslatter
+/* ------------------------------------------ */
+
+.newslatter
+{
+	padding:85px 0 60px;
+	background-color:#f8f8f8;
+}
+
+.newslatter .item
+{
+	background-color:#fff;
+	margin-bottom:30px;
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.28);
+}
+
+.newslatter .item .img
+{
+	display:block;
+	width:100%;
+	height:235px;
+}
+
+
+.newslatter .item .img img
+{
+	width:100%;
+	height:100%
+}
+
+.newslatter .item .details
+{
+	padding:20px 30px
+}
+
+.newslatter .item .title
+{
+	display:inline-block;
+	color:#010101;
+	font-family: "Tajawal-Bold";
+	font-size:15px;
+	margin-bottom:10px;
+	width:280px;
+	max-width:100%;
+}
+
+.newslatter .item .time
+{
+	float:right;
+	color:#6a7283;
+	font-size:12px;
+	margin-left:10px;
+}
+
+.newslatter .item .time i
+{
+	margin-left:5px;
+	font-size:15px;
+	margin-top:-2px;
+	float:right
+}
+
+.newslatter .item .desc
+{
+	color:#737373;
+	font-size:12px;
+	font-family: "Tajawal-Bold";
+	margin-bottom:15px;
+	margin-top:10px
+}
+
+.newslatter .item .readMore
+{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-family: "Tajawal-Bold";
+	background-color:#bbc4d9;
+	color:#7a8397;
+	font-size:16px;
+	display:block;
+	border-radius:3px
+}
+
+.newslatter .item .readMore:hover
+{
+	color:#fff;
+	background-color:#0ea2ef
+}
+
+
+/* ------------------------------------------ */
+/*         Newslatter Details
+/* ------------------------------------------ */
+
+.newslatter-details
+{
+	padding:65px 0 55px;
+	background-color:#f8f8f8
+}
+
+.newslatter-details .content
+{
+	background-color:#fff;
+	padding:50px;
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.28);
+}
+
+.newslatter-details .OwlImages
+{
+	margin-bottom:30px;
+}
+
+.newslatter-details .OwlImages img
+{
+	width:100%;
+	height:450px
+}
+
+
+.newslatter-details .owl-theme .owl-controls .owl-buttons div
+{
+	position:absolute;
+	right:-20px;
+	top:calc(50% - 22.5px);
+    border-radius:50%;
+    opacity:1;
+    background:none;
+    line-height: 40px;
+    width:45px;
+    height:45px;
+    color:#fff;
+    margin:0;
+    text-align:center;
+    z-index:6;
+    font-size:25px;	
+    background-color:#0ea2ef;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.newslatter-details .owl-theme .owl-controls .owl-buttons div.owl-prev
+{
+	right:auto;
+	left:-20px
+}
+
+.newslatter-details .title
+{
+	float:right;
+	color:#010101;
+	font-size:20px;
+	width:435px;
+	max-width:100%;
+	font-family: "Tajawal-Bold";
+}
+
+.newslatter-details .date
+{
+	float:left;
+	margin-right:15px;
+	margin-top:3px;
+}
+
+.newslatter-details .date li
+{
+	float:left;
+	color:#6a7283;
+	font-size:12px;
+	margin-right:10px
+}
+
+.newslatter-details .date li i
+{
+	float:right;
+	font-size:15px;
+	margin-top:-2px;
+	margin-left:5px
+}
+
+.newslatter-details .shareHeader
+{
+	float:left;
+	position:relative;
+	margin-top:2px;
+}
+
+.newslatter-details .shareHeader .openShare
+{
+	color:#0e0e0e;
+	font-size:14px;
+	font-family: "Tajawal-Bold";
+	cursor:pointer
+}
+
+.newslatter-details .shareHeader .openShare i
+{
+	float:left;
+	font-size:25px;
+	margin-right:10px;
+	margin-top:-7px;
+}
+
+
+.newslatter-details .desc
+{
+	color:#474747;
+	font-size:14px;
+	font-family: "Tajawal-Bold";
+	margin-top:30px;
+}
+
+
+
+
+.ReservationPage
+{
+	padding:80px 0;
+	background-color:#F8F8F8
+}
+
+.ReservationPage .Reservation
+{
+	position:static;
+	display:block;
+	width:100%;
+}
+
+
+
+
+
+/* ------------------------------------------ */
+/*         Videos
+/* ------------------------------------------ */
+.videoModal .modal-body
+{
+	padding:0
+}
+.videoModal iframe
+{
+	height:400px;
+	    margin-bottom: -5px;
+}
+
+
+
+
+
+
+
+

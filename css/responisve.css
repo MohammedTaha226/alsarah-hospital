@@ -1,0 +1,338 @@
+/*Big Size Screens*/
+@media (max-width: 1200px)
+{
+	
+	.footer .map
+	{
+		margin-top:60px
+	}
+	
+	.newslatter-details .title
+	{
+		width:410px
+	}
+	
+	.contactUs .contact
+	{
+		min-height:481px
+	}
+	
+}
+
+/* small Screens & tablets & Smart phone */
+@media (max-width: 991px) 
+{
+	.header .menuHeader .menu
+	{
+		display:none;
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager
+	{
+		top:50px
+	}
+	
+	
+	.MailingList .rightSection,
+	.MailingList .leftSection
+	{
+		float:none;
+	}
+	
+	.MailingList .leftSection .inputStyle,
+	.MailingList .leftSection .inputStyle input
+	{
+		width:100%
+	}
+	
+	.MailingList .leftSection button
+	{
+		width:100%;
+		margin-top:20px
+	}
+	
+	.footer .col-md-3, .footer .col-md-2
+	{
+		min-height:auto
+	}
+	
+	.footer .padding-right,
+	.footer .col-md-4
+	{
+		padding-right:15px;
+	}
+	
+	.footer .col-md-3, .footer .col-md-2
+	{
+		border-left:none
+	}
+	
+	.header .openMenu
+	{
+		display:block
+	}
+	
+	.Facilities img,
+	.Facilities .google-map
+	{
+		height:auto
+	}
+	
+	.contactUs .contactInfo
+	{
+		margin-bottom:20px
+	}
+	
+	.newslatter-details .title
+	{
+		display:block;
+		width:100%;
+		float:none;
+		margin-bottom:15px;
+	}
+	
+	.newslatter-details .date
+	{
+		
+		float:right;
+		display:inline-block;
+		margin-right:0
+	}
+	
+	.newslatter-details .date li
+	{
+		margin-right:0;
+		margin-left:10px
+	}
+	
+	.newslatter-details .shareHeader
+	{
+		display:inline-block
+	}
+	
+	.newslatter-details .OwlImages img
+	{
+		height:auto
+	}
+	
+}
+
+/* Small Screens */
+@media (min-width: 768px) and (max-width: 991px) 
+{
+	
+	
+}
+
+/* Mobile & Tablets */
+@media (max-width: 767px) 
+{
+	
+	.header .topBar .logo
+	{
+		margin-top:15px;
+		display:inline-block
+	}
+	
+	.header .topBar .logo,
+	.header .topBar .leftSection
+	{
+		float:none;
+	}
+	
+	.header .topBar 
+	{
+		text-align:center
+	}
+	.header .topBar .leftSection .searchHeader
+	{
+		display:inline-block;
+		margin-top:15px;
+		margin-bottom:0
+	}
+	
+
+	
+	.header .topBar .leftSection .telHeader
+	{
+		display:none
+	}
+	
+	.the-slider-control li span i
+	{
+		opacity: 0.5
+	}
+	
+	.the-slider-control li span i:hover
+	{
+		opacity:1
+	}
+	
+	.slider .slider-details
+	{
+		padding-top:60px
+	}
+	
+	.slider img
+	{
+		height:400px
+	}
+	
+	.slider .slider-details .desc
+	{
+		font-size:30px
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager
+	{
+		top:30px
+	}
+	
+	.Breadcrumb
+	{
+		padding:70px 0
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager
+	{
+		display:none;
+	}
+	
+	
+	.footer .footerDown 
+	{
+		text-align:center;
+	}
+	
+	.footer .footerDown .copyRights,
+	.footer .footerDown .socialFooter,
+	.footer .footerDown .socialFooter li,
+	.footer .footerDown .logoServers
+	{
+		float:none;
+		margin-bottom:10px;
+	}
+	
+	.footer .footerDown .socialFooter li
+	{
+		display:inline-block;
+		margin-bottom:5px
+	}
+	
+	.footer .footerDown .copyRights
+	{
+		margin-left:0;
+		margin-bottom:15px;
+	}
+
+	
+}
+
+/* Tablets */
+@media (min-width:480px) and (max-width: 767px)
+{
+
+}
+
+/* Mobile */
+@media (max-width: 479px) 
+{
+	.slider .slider-details .desc
+	{
+		font-size:20px
+	}
+	
+	.slider img
+	{
+		height:350px;
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager
+	{
+		right:30px
+	}
+	
+	.header .topBar .leftSection .searchHeader input
+	{
+		width:100%
+	}
+	
+	.header .topBar .leftSection .searchHeader button
+	{
+		width:100%
+	}
+	
+	.Breadcrumb
+	{
+		padding:50px 0
+	}
+	
+	.Breadcrumb h2
+	{
+		font-size:25px;
+	}
+	.Breadcrumb ul li:not(:first-of-type):before 
+	{
+		padding:0 10px
+	}
+	
+	.accordion1 .accordion .accordion-title
+	{
+		font-size:15px;
+		padding:0 15px
+	}
+	
+	.accordion1 .accordion .accordion-title i
+	{
+		left:15px;
+	}
+	
+	.accordion1 .accordion .accordion-content
+	{
+		padding:25px 20px 
+	}
+	
+	.newslatter-details .content
+	{
+		padding:30px 20px
+	}
+	
+	.Reservation
+	{
+		padding:30px 20px
+	}
+	
+	.footer .col-xs-6
+	{
+		width:100%;
+		float:none
+	}
+
+	
+}
+/* Mobile */
+@media (max-width: 320px) 
+{
+	.accordion1 .accordion .accordion-title
+	{
+		font-size:13px;
+		padding:0 15px
+	}
+	.accordion1 .accordion .accordion-title.title2
+	{
+		padding-top:20px
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
